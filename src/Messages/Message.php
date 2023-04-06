@@ -1,11 +1,11 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Messages;
+namespace Hadimazalan\FpxPayment\Messages;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Config;
-use JagdishJP\FpxPayment\Models\FpxTransaction;
-use JagdishJP\FpxPayment\Traits\VerifyCertificate;
+use Hadimazalan\FpxPayment\Models\FpxTransaction;
+use Hadimazalan\FpxPayment\Traits\VerifyCertificate;
 
 class Message {
 	use VerifyCertificate;

@@ -1,13 +1,13 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Messages;
+namespace Hadimazalan\FpxPayment\Messages;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
-use JagdishJP\FpxPayment\Constant\Response;
-use JagdishJP\FpxPayment\Models\FpxTransaction;
-use JagdishJP\FpxPayment\Contracts\Message as Contract;
-use JagdishJP\FpxPayment\Exceptions\InvalidCertificateException;
+use Hadimazalan\FpxPayment\Constant\Response;
+use Hadimazalan\FpxPayment\Models\FpxTransaction;
+use Hadimazalan\FpxPayment\Contracts\Message as Contract;
+use Hadimazalan\FpxPayment\Exceptions\InvalidCertificateException;
 
 class AuthorizationConfirmation extends Message implements Contract
 {

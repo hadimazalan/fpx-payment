@@ -1,10 +1,10 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Http\Controllers;
+namespace Hadimazalan\FpxPayment\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use JagdishJP\FpxPayment\Messages\AuthorizationRequest;
+use Hadimazalan\FpxPayment\Messages\AuthorizationRequest;
 
 class PaymentController extends Controller {
 

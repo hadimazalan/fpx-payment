@@ -1,15 +1,15 @@
 <?php
 
-namespace JagdishJP\FpxPayment;
+namespace Hadimazalan\FpxPayment;
 
-use JagdishJP\FpxPayment\Commands\UpdateBankListCommand;
-use JagdishJP\FpxPayment\Commands\FpxPublish;
+use Hadimazalan\FpxPayment\Commands\UpdateBankListCommand;
+use Hadimazalan\FpxPayment\Commands\FpxPublish;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use JagdishJP\FpxPayment\Commands\PaymentStatusCommand;
+use Hadimazalan\FpxPayment\Commands\PaymentStatusCommand;
 
 class FpxPaymentServiceProvider extends ServiceProvider
 {

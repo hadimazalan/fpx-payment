@@ -1,6 +1,6 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Commands;
+namespace Hadimazalan\FpxPayment\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -48,7 +48,7 @@ class FpxPublish extends Command {
 				return 0;
 			}
 
-			$parameters = ['--provider' => 'JagdishJP\FpxPayment\FpxPaymentServiceProvider', '--tag' => "fpx-{$publishable}"];
+			$parameters = ['--provider' => 'Hadimazalan\FpxPayment\FpxPaymentServiceProvider', '--tag' => "fpx-{$publishable}"];
 
 			if (Str::is($force, 'force'))
 				$parameters['--force'] = null;

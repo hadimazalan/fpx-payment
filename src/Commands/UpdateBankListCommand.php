@@ -1,9 +1,9 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Commands;
+namespace Hadimazalan\FpxPayment\Commands;
 
-use JagdishJP\FpxPayment\Messages\BankEnquiry;
-use JagdishJP\FpxPayment\Models\Bank;
+use Hadimazalan\FpxPayment\Messages\BankEnquiry;
+use Hadimazalan\FpxPayment\Models\Bank;
 use Illuminate\Console\Command;
 
 class UpdateBankListCommand extends Command

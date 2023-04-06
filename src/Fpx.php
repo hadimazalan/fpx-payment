@@ -1,13 +1,13 @@
 <?php
 
-namespace JagdishJP\FpxPayment;
+namespace Hadimazalan\FpxPayment;
 
 use Exception;
-use JagdishJP\FpxPayment\Messages\AuthEnquiry;
-use JagdishJP\FpxPayment\Messages\BankEnquiry;
-use JagdishJP\FpxPayment\Models\Bank;
+use Hadimazalan\FpxPayment\Messages\AuthEnquiry;
+use Hadimazalan\FpxPayment\Messages\BankEnquiry;
+use Hadimazalan\FpxPayment\Models\Bank;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use JagdishJP\FpxPayment\Exceptions\InvalidCertificateException;
+use Hadimazalan\FpxPayment\Exceptions\InvalidCertificateException;
 
 class Fpx
 {

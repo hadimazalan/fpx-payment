@@ -1,13 +1,13 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Messages;
+namespace Hadimazalan\FpxPayment\Messages;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Str;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
-use JagdishJP\FpxPayment\Contracts\Message as Contract;
+use Hadimazalan\FpxPayment\Contracts\Message as Contract;
 
 class BankEnquiry extends Message implements Contract {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Messages;
+namespace Hadimazalan\FpxPayment\Messages;
 
 use GuzzleHttp\Client;
 use Eastwest\Json\Json;
@@ -8,10 +8,10 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Validator;
-use JagdishJP\FpxPayment\Constant\Response;
-use JagdishJP\FpxPayment\Models\FpxTransaction;
-use JagdishJP\FpxPayment\Traits\VerifyCertificate;
-use JagdishJP\FpxPayment\Contracts\Message as Contract;
+use Hadimazalan\FpxPayment\Constant\Response;
+use Hadimazalan\FpxPayment\Models\FpxTransaction;
+use Hadimazalan\FpxPayment\Traits\VerifyCertificate;
+use Hadimazalan\FpxPayment\Contracts\Message as Contract;
 
 class AuthEnquiry extends Message implements Contract
 {

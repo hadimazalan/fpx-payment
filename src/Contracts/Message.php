@@ -1,6 +1,6 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Contracts;
+namespace Hadimazalan\FpxPayment\Contracts;
 
 
 interface Message {

@@ -1,12 +1,12 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Commands;
+namespace Hadimazalan\FpxPayment\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
-use JagdishJP\FpxPayment\Fpx;
-use JagdishJP\FpxPayment\Messages\AuthEnquiry;
-use JagdishJP\FpxPayment\Models\FpxTransaction;
+use Hadimazalan\FpxPayment\Fpx;
+use Hadimazalan\FpxPayment\Messages\AuthEnquiry;
+use Hadimazalan\FpxPayment\Models\FpxTransaction;
 
 class PaymentStatusCommand extends Command {
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Traits;
+namespace Hadimazalan\FpxPayment\Traits;
 
-use JagdishJP\FpxPayment\Exceptions\InvalidCertificateException;
+use Hadimazalan\FpxPayment\Exceptions\InvalidCertificateException;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;

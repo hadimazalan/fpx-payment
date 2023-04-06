@@ -1,6 +1,6 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Exceptions;
+namespace Hadimazalan\FpxPayment\Exceptions;
 
 use Exception;
 

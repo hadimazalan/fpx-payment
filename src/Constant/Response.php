@@ -1,6 +1,6 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Constant;
+namespace Hadimazalan\FpxPayment\Constant;
 
 class Response {
 

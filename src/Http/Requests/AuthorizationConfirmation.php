@@ -1,8 +1,8 @@
 <?php
 
-namespace JagdishJP\FpxPayment\Http\Requests;
+namespace Hadimazalan\FpxPayment\Http\Requests;
 
-use JagdishJP\FpxPayment\Messages\AuthorizationConfirmation as AuthorizationConfirmationMessage;
+use Hadimazalan\FpxPayment\Messages\AuthorizationConfirmation as AuthorizationConfirmationMessage;
 use Illuminate\Foundation\Http\FormRequest;
 
 class AuthorizationConfirmation extends FormRequest {
