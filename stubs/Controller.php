@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\FPX;
 
-use JagdishJP\FpxPayment\Http\Requests\AuthorizationConfirmation as Request;
+use Hadimazalan\FpxPayment\Http\Requests\AuthorizationConfirmation as Request;
 use App\Http\Controllers\Controller as BaseController;
 use Illuminate\Support\Facades\Cache;
-use JagdishJP\FpxPayment\Fpx;
+use Hadimazalan\FpxPayment\Fpx;
 
 class Controller extends BaseController
 {
