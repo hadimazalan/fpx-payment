@@ -25,7 +25,7 @@ class BankEnquiry extends Message implements Contract {
 		parent::__construct();
 
 		$this->type = self::CODE;
-		$this->flow = ($flow) ? $flow : 		
+		$this->flow = $flow;		
 		$this->url = App::environment('production') ?
 			Config::get('fpx.urls.production.bank_enquiry') :
 			Config::get('fpx.urls.uat.bank_enquiry');
