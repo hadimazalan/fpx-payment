@@ -37,12 +37,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"JagdishJP\\FpxPayment\\": "src"
+			"Hadimazalan\\FpxPayment\\": "src"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"JagdishJP\\FpxPayment\\Tests\\": "tests"
+			"Hadimazalan\\FpxPayment\\Tests\\": "tests"
 		}
 	},
 	"scripts": {
