@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Config;
 use App\Http\Controllers\FPX\Controller;
 use Monarobase\CountryList\CountryListFacade;
-use JagdishJP\FpxPayment\Http\Controllers\PaymentController;
+use Hadimazalan\FpxPayment\Http\Controllers\PaymentController;
 
 
 $directPath = Config::get('fpx.direct_path');

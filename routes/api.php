@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use JagdishJP\FpxPayment\Fpx;
+use Hadimazalan\FpxPayment\Fpx;
 
 Route::get('fpx/transaction/status/{reference_id?}', function ($reference_id = '') {
 
