@@ -19,6 +19,7 @@ class Bank extends Model {
 		'name',
 		'short_name',
 		'status',
+		'flow'
 	];
 
 	public function isOnline() {
