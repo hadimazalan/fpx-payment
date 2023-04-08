@@ -21,10 +21,11 @@ class BankEnquiry extends Message implements Contract {
 	 */
 	public $url;
 
-	public function __construct() {
+	public function __construct($flow) {
 		parent::__construct();
 
 		$this->type = self::CODE;
+		$this->flow = ($flow) ? $flow : 		
 		$this->url = App::environment('production') ?
 			Config::get('fpx.urls.production.bank_enquiry') :
 			Config::get('fpx.urls.uat.bank_enquiry');
@@ -235,18 +236,18 @@ class BankEnquiry extends Message implements Contract {
 				"name" => "BANK PERTANIAN MALAYSIA BERHAD (AGROBANK)",
 				"short_name" => "AGRONet"
 			],
-      [
-        "bank_id" => "BOCM01",
-        "status" => "offline",
-        "name" => "Bank Of China (M) Berhad",
-        "short_name" => "Bank Of China (M) Berhad"
-      ],
-      [
-        "bank_id" => "LOAD001",
-        "status" => "offline",
-        "name" => "LOAD001",
-        "short_name" => "LOAD001"
-      ]
+			[
+				"bank_id" => "BOCM01",
+				"status" => "offline",
+				"name" => "Bank Of China (M) Berhad",
+				"short_name" => "Bank Of China (M) Berhad"
+			],
+			[
+				"bank_id" => "LOAD001",
+				"status" => "offline",
+				"name" => "LOAD001",
+				"short_name" => "LOAD001"
+			]
 		]);
 
 		$banks = $banks->merge($this->getTestingBanks());
