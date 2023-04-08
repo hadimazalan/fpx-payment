@@ -55,7 +55,7 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"JagdishJP\\FpxPayment\\FpxPaymentServiceProvider"
+				"Hadimazalan\\FpxPayment\\FpxPaymentServiceProvider"
 			]
 		}
 	}
