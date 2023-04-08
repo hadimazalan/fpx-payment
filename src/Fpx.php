@@ -18,12 +18,12 @@ class Fpx
 	 * @param bool $getLatest (optional) pass true to get latest banks
 	 * @return \Illuminate\Support\Collection
 	 */
-	public static function getBankList(bool $getLatest = false)
+	public static function getBankList(bool $getLatest = false, $flow = '01')
 	{
 		if ($getLatest) {
 			try {
 				$bankEnquiry = new BankEnquiry;
-				$dataList = $bankEnquiry->getData();
+				$dataList = $bankEnquiry->getData($flow);
 				$response = $bankEnquiry->connect($dataList);
 				$token = strtok($response, "&");
 				$bankList = $bankEnquiry->parseBanksList($token);
@@ -41,7 +41,7 @@ class Fpx
 						continue;
 					}
 
-					Bank::updateOrCreate(['bank_id' => $bankId], [
+					Bank::updateOrCreate(['bank_id' => $bankId, 'flow' => $flow], [
 						'status' => $status == 'A' ? 'Online' : 'Offline',
 						'name' => $bank['name'],
 						'short_name' => $bank['short_name']

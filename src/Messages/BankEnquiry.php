@@ -21,11 +21,10 @@ class BankEnquiry extends Message implements Contract {
 	 */
 	public $url;
 
-	public function __construct($flow = '01') {
+	public function __construct() {
 		parent::__construct();
 
-		$this->type = self::CODE;
-		$this->flow = $flow;		
+		$this->type = self::CODE;	
 		$this->url = App::environment('production') ?
 			Config::get('fpx.urls.production.bank_enquiry') :
 			Config::get('fpx.urls.uat.bank_enquiry');
@@ -45,7 +44,8 @@ class BankEnquiry extends Message implements Contract {
 	 * get request data from
 	 *
 	 */
-	public function getData() {
+	public function getData($flow = '01') {
+		$this->flow = $flow;
 		return collect([
 			'fpx_msgType' => urlencode($this->type),
 			'fpx_msgToken' => urlencode($this->flow),

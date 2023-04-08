@@ -18,6 +18,7 @@ class CreateBanksTable extends Migration {
 			$table->string('name');
 			$table->string('short_name');
 			$table->string('status')->default(Bank::STATUS_OFFLINE);
+			$table->string('flow');
 			$table->timestamps();
 		});
 	}
