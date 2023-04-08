@@ -21,7 +21,7 @@ class BankEnquiry extends Message implements Contract {
 	 */
 	public $url;
 
-	public function __construct($flow) {
+	public function __construct($flow = '01') {
 		parent::__construct();
 
 		$this->type = self::CODE;
