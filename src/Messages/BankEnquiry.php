@@ -240,7 +240,7 @@ class BankEnquiry extends Message implements Contract {
 				"bank_id" => "BOCM01",
 				"status" => "offline",
 				"name" => "Bank Of China (M) Berhad",
-				"short_name" => "Bank Of China (M) Berhad"
+				"short_name" => "Bank Of China"
 			],
 			[
 				"bank_id" => "LOAD001",
